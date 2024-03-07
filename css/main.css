@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #fd5555, #38a09c, #fd5555);
+  width: 100vw; 
+  height: 100vh;
+  overflow: hidden;
+}
+.gallery-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 0 ;
+}
+.gallery-box .icon {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.gallery-box .icon.left:hover {
+  background: #555;
+  transform: translateX(-3px);
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+}
+.gallery-box .icon.icon.right:hover {
+  background: #555;
+  transform: translateX(3px);
+  -webkit-transform: translateX(3px);
+  -moz-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  -o-transform: translateX(3px);
+}
+.gallery-box .icon i {
+  font-size: 40px;
+  color: #e02d00;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.gallery-box .icon:hover i {
+  color: #f35f3a;
+}
+.gallery {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery img {
+  width: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  cursor: pointer;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+.gallery img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
